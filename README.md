@@ -5,8 +5,10 @@
 
 
 <ins>Instructions</ins> : 
-To run SPA, install npm package using ```npm i``` & run ```npm start```  
-External NPM installs - axios, react-hot-toast 
+
+1. To run SPA, install npm package using ```npm i``` & run ```npm start```  
+2. ```App.js``` incl source code 
+3. External NPM installs - axios, react-hot-toast 
 
 **WARNING**: Use Firefox or Chrome extension to enable CORS, for CORS related exceptions. 
 
