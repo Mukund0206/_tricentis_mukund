@@ -65,8 +65,8 @@ function App() {
       setResultData([...initialData]);
       setSearchResult([...sorted]);
     } catch (ex) {
-      toast.error("Check for CORS error.")
       console.log('++ handle exception ++ ', ex.message)
+      toast.error("Check for CORS error.")
     }
   };
 
@@ -74,7 +74,7 @@ function App() {
     if (e.key === "Enter" && e.target.value.length ) {
       getResultData(e.target.value);
     } else if(e.key === "Enter" && !e.target.value.length){
-      console.log('handle empty string search +++--> reset state' )     
+      console.log('handle empty string search +++ reset state' )     
       setIsRender(true);
       clearInterval(handleInterval);
       setSearchResult([...initialData]);
@@ -100,7 +100,7 @@ function App() {
             className="search-box"
             value={searchKey} 
             onChange={(e) => setSearchKey(e.target.value)}
-            placeholder="Collection Name"
+            placeholder="Search Band"
             onKeyPress={handleSearch}
           />
           { searchKey && !clear && <button style={{width: '8%'}} > enter </button> }
